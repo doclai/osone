@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Sample site</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<script src="./validation.js"></script> 
+</head>
+<body>
+
+<form name="form" onsubmit="return validateForm();" action="metrics.php" method="post">
+<!-- <form name="form" action="./metrics.php" method="post"> -->
+	True positive: <input type="text" name="tp"> 
+	<p id="check-tp" style="display:inline"></p> <br>
+	False negative: <input type="text" name="fn"> 
+	<p id="check-fn" style="display:inline"></p> <br>
+	False positive: <input type="text" name="fp"> 
+	<p id="check-fp" style="display:inline"></p> <br>
+	True negative: <input type="text" name="tn"> 
+	<p id="check-tn" style="display:inline"></p> <br>
+	<button type="submit">Submit</button>
+</form>
+
+<form action="display.php" method="post">
+	<button type="submit">Display</button>
+</form>
+</div>
+</body>
+</html>
+
+
